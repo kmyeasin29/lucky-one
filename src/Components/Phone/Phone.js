@@ -7,6 +7,7 @@ import './Phone.css'
 const Phone = (props) => {
     const { handleAddToCart } = props;
     const { name, img, price } = props.phone
+
     return (
         <div className="product">
             <img src={img} alt="" />

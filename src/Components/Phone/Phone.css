@@ -6,6 +6,8 @@
     padding: 5px;
     position: relative;
     margin: 0 auto;
+    /* clip-path: polygon(15% 0%, 100% 0, 100% 90%, 85% 100%, 0 100%, 0% 10%);
+    background-color: grey; */
 }
 .product img{
     width: 286px;
@@ -28,5 +30,6 @@
     justify-content: center;
 }
 .cart-button:hover{
-    background-color: aqua;
+    color: black;
+    background-color: rgba(241, 218, 7, 0.534);
 }
