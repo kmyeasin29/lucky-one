@@ -1,5 +1,8 @@
 # Getting Started with Create React App
 
+Project Name: Lucky-One(Nokia Phone Collection)
+live site link: https://darling-smakager-b38d91.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
