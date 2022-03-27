@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Cart.css'
 
-const Cart = ({ cart }) => {
-
+const Cart = (props) => {
+    const { cart } = props;
+    // if (!(cart.length > 4)) {
+    // }
+    // else {
+    // }
     return (
-        <div>
+        <div className='cart'>
             <h3>Shopping Cart</h3>
-            <p>Add Items: {cart.length}</p>
+            {
+                cart.map(phone => <h4 key={phone.id}>{phone.name}</h4>)
+            }
             <div>
-
+                <button>CHOOSE 1 FOR ME</button>
+                <button>RESET CART</button>
             </div>
 
         </div>
