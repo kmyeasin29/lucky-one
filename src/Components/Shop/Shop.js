@@ -5,7 +5,7 @@ import './Shop.css'
 const Shop = () => {
     const [phones, setPhones] = useState([]);
     const [cart, setCart] = useState([])
-    console.log(cart);
+    // console.log(cart);
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())

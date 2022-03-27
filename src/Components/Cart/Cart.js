@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+// // import React, { useState } from 'react';
+// import { useState } from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
     const { cart } = props;
-    // if (!(cart.length > 4)) {
-    // }
-    // else {
-    // }
+
     return (
         <div className='cart'>
             <h3>Shopping Cart</h3>
