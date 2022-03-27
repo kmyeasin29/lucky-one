@@ -4,7 +4,8 @@ import Phone from '../Phone/Phone';
 import './Shop.css'
 const Shop = () => {
     const [phones, setPhones] = useState([]);
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+    // const { random, setRandom } = useState();
     // console.log(cart);
     useEffect(() => {
         fetch('data.json')
@@ -16,7 +17,17 @@ const Shop = () => {
         // console.log(phone);
         const newCart = [...cart, phone]
         setCart(newCart)
+        if (cart.length >= 4) {
+            alert("You already Selected 4 Items")
+        }
     }
+
+    //changed
+    // const chooseRandomly = () => {
+    //     afterClick = (Math.floor(Math.random() * cart.length));
+    //     setRandom(cart[afterClick])
+    // }
+
     return (
 
         <div>
@@ -35,10 +46,12 @@ const Shop = () => {
 
                 </div>
                 <div className="cart-container">
-                    {/* {
-                        cart.map(item => <Cart></Cart>)
-                    } */}
                     <Cart cart={cart}></Cart>
+                    <div>
+                        {/* <button onClick={chooseRandomly}>CHOOSE 1 FOR ME</button> */}
+                        {/* <button onClick={() => setRandom("")}>RESET CART</button> */}
+                    </div>
+
                 </div>
             </div>
         </div>
